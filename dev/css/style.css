@@ -159,9 +159,9 @@ hr {
 h1, .h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {}
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { line-height: 1.2; }
 
-h1, .h1 { font-size: 36px; margin-bottom: 42px; line-height: 1.35; text-align: center; }
-h2, .h2 { font-size: 32px; margin-bottom: 42px; text-align: center; }
-h3, .h3 { font-size: 18px; margin-bottom: 10px;}
+h1, .h1 { font-size: 36px; margin-bottom: 42px; line-height: 1.15; text-align: center; }
+h2, .h2 { font-size: 32px; margin-bottom: 42px; line-height: 1.35; text-align: center; }
+h3, .h3 { font-size: 18px; margin-bottom: 10px; line-height: 1.35; }
 h4, .h4 { font-size: 17px;}
 h5, .h5 { font-size: 16px;}
 h6, .h6 { font-size: 15px;}
@@ -170,8 +170,8 @@ h4, h5, h6, .h4, .h5, .h6 { margin-bottom: 10px; max-width: 840px; margin-left: 
 
 
 h1, h2, h3, .h1, .h2, .h3 { position: relative; }
-h1:before, h2:before, h3:before, .h1:before, .h2:before, .h3:before { position: absolute; margin: auto; left: 0; right: 0; top: -25px; content: url(../img/h_before.png);}
-h1:after, h2:after, h3:after, .h1:after, .h2:after, .h3:after { position: absolute; margin: auto; left: 0; right: 0; bottom: -28px; content: url(../img/h_after.png);}
+h1:before, h2:before, h3:before, .h1:before, .h2:before, .h3:before { position: absolute; margin: auto; left: 0; right: 0; top: -0.78em; content: url(../img/h_before.png);}
+h1:after, h2:after, h3:after, .h1:after, .h2:after, .h3:after { position: absolute; margin: auto; left: 0; right: 0; bottom: -0.87em; content: url(../img/h_after.png);}
 
 
 .font10 {font-size: 10px !important; }
@@ -283,15 +283,15 @@ select {
 .txt h2, .txt h3, .txt h4 { line-height: 1.3;}
 .txt p { margin-bottom: 15px; text-indent: 15px;}
 .txt ul  { margin-bottom: 15px; }
-.txt ul > li { position: relative; margin-bottom: 7px; overflow: hidden; padding-left: 10px; }
+.txt ul > li { position: relative; margin-bottom: 7px; overflow: hidden; padding-left: 14px; }
 .txt ul > li:before {
-    background-color: #5b8db7;
+    background-color: #8db322;
     border-radius: 50%;
     content: '';
-    height: 4px;
+    height: 5px;
     left: 0;
     position: absolute;
-    top: 7px;
+    top: 10px;
     width: 5px;
     z-index: 1;
 }
@@ -332,6 +332,9 @@ select {
 .header_top .wrapper:after { position: absolute; content: url(../img/header_after.png); top: 0; right: 0; z-index: 2; }
 
 
+
+
+
 .main_menu__list { padding: 10px 0; margin-left: -5px; margin-right: -5px;}
 .main_menu__item { display: inline-block; margin-right: 20px;}
 .main_menu__link { display: block; color: #fff; padding: 4px; transition: color 0.2s ease; font-size: 18px;}
@@ -340,16 +343,25 @@ select {
 
 
 .header_soc { white-space: nowrap; }
-.header_soc__link { color: #cecece; border: 2px solid #cecece; display: inline-block; box-sizing: border-box; width: 30px; height: 30px; margin-right: 8px; text-align: center; line-height: 26px; border-radius: 30px; transition: all 0.2s ease;}
+.header_soc__link { color: #cecece; border: 2px solid #cecece; display: inline-block; box-sizing: border-box; width: 27px; height: 27px; margin-right: 4px; text-align: center; line-height: 23px; border-radius: 30px; transition: all 0.2s ease;}
 .header_soc__link-vk:hover { color: #507299; border-color: #507299; }
 .header_soc__link-fb:hover { color: #3B5998; border-color: #3B5998; }
 .header_soc__link-instagram:hover { color: #000; border-color: #000; }
 .header_soc__link-youtube:hover { color: #CC181E; border-color: #CC181E; }
 .header_subscribe__link, .header_mail__link { color: #bc2641; transition: all 0.2s ease; font-size: 18px;}
-.header_subscribe__link:hover, .header_mail__link:hover { color: #9abb3b; }
+/*.header_subscribe__link:hover, .header_mail__link:hover { color: #9abb3b; }*/
 .header_phone__link { font-size: 18px; transition: all 0.2s ease; }
 .header_phone__link span { font-size: 24px; }
-.header_phone__link:hover { color: #9abb3b; }
+/*.header_phone__link:hover { color: #9abb3b; }*/
+
+
+.header_subscribe__link { position: relative; padding-left:24px; }
+.header_subscribe__link:before { position: absolute; left: -2px; top: 6px; content: url(../img/subscribe_icon.png); }
+.header_mail__link { position: relative; padding-left: 30px; }
+.header_mail__link:before { position: absolute; left: -1px; top: 6px; content: url(../img/email_icon.png); }
+.header_phone__link { position: relative; padding-left: 24px; }
+.header_phone__link:before { position: absolute; left: -3px; top: 7px; content: url(../img/phone_icon.png); }
+
 
 .header_subscribe__link,
 .header_mail__link,
@@ -387,6 +399,14 @@ select {
 .footer_mail__link:hover { color: #fff; }
 .footer_phone { margin-bottom: 18px; }
 .footer_mail { margin-bottom: 18px; }
+
+.footer_phone__link { position: relative; padding-left: 42px; }
+.footer_phone__link:before { position: absolute; left: 0; top: 0; content: url(../img/email_footer_icon.png); }
+.footer_phone__link:after { height: 15px; width: 0; position: absolute; left: 31px; top: 0; bottom: 0; margin: auto; border-left: 1px solid #63737c; content: '';}
+.footer_mail__link { position: relative; padding-left: 42px; }
+.footer_mail__link:before { position: absolute; left: 0; top: 0; content: url(../img/phone_footer_icon.png); }
+.footer_mail__link:after { height: 15px; width: 0; position: absolute; left: 31px; top: 0; bottom: 0; margin: auto; border-left: 1px solid #63737c; content: '';}
+
 
 
 .breadcrumbs { background: url(../img/breadcrumbs_back.jpg) no-repeat scroll left center / cover transparent; padding: 18px 0; font-family: 'Open Sans', sans-serif; position: relative; z-index: 1; margin-bottom: 55px;}
@@ -497,6 +517,14 @@ select {
 .news_item__img { margin: auto; display: block; line-height: 1; }
 .news_item__announce { font-family: 'Open Sans', sans-serif; font-size: 14px;}
 .news_item__link { font-family: 'Open Sans', sans-serif; font-size: 14px; color: #8db322; font-style: italic;}
+
+.news_page .txt { margin-bottom: 25px;}
+.news_page .txt li { overflow: hidden;}
+.news_page__pubdate { position: relative; z-index: 2; color: #fff; font-size: 14px; padding: 9px 12px; background-color: #53626a; font-family: 'Open Sans', sans-serif; margin-bottom: 15px; display: inline-block;}
+.news_page__img_wrap { float: left; margin-right: 30px; margin-bottom: 30px; }
+
+.news_page__back { margin-bottom: 60px; }
+
 
 
 .slick_where { position: relative; }
