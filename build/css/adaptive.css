@@ -1,16 +1,59 @@
 
 @media (max-width: 1100px) {
-	
+	.header_logo { -webkit-box-flex: 0; -ms-flex: 0 0 208px; flex: 0 0 208px;}
+	.header_top .wrapper:after { right: -98px;}
+	.main_menu__item { margin-right: 11px;}
+	.main_icons__b_a:before { left: -250px;}
+	.main_icons__b_a:after { right: -250px;}
+	.slick_main_catitems { margin: 0;}
+	.main_icons { padding: 0;}
+	.darkgrey_block_wrap__center { width: 50%;}
+
 }
 
 
 @media (min-width: 768px) and (max-width: 979px) {
-	
+	.mobile_menu { float: none; display: inline-block;}
+	.main_menu { display: none;}
+
+	.header_bottom_wrap__left, .header_bottom_wrap__right { -ms-flex-wrap: wrap; flex-wrap: wrap;}
+	.header_bottom_wrap__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end;}
+	.header_bottom_wrap__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: start;}
+	.header_logo { -webkit-box-flex: 0; -ms-flex: 0 0 240px; flex: 0 0 240px;}
+
+	.footer_app_link { margin-right: 7px;}
 
 }
+
+@media (max-width: 850px) {
+	.footer_block.col-3:nth-child(1),
+	.footer_block.col-3:nth-child(2) { display: none;}
+	.footer_block.col-3 { width: 50%;}
+}
+
 			 
 @media (max-width: 767px) {
+	.mobile_menu { float: none; display: inline-block;}
+	.main_menu { display: none;}
+
+	.header_bottom_wrap__left, .header_bottom_wrap__right { -ms-flex-wrap: wrap; flex-wrap: wrap;}
+	.header_bottom_wrap__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end;}
+	.header_bottom_wrap__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: start;}
+	.header_logo { -webkit-box-flex: 0; -ms-flex: 0 0 240px; flex: 0 0 240px;}
+
+	.main_icons_item { width: 50%;}
+
+	.darkgrey_block_wrap { -ms-flex-wrap: wrap; flex-wrap: wrap;}
+	.darkgrey_block_wrap__left, .darkgrey_block_wrap__right, .darkgrey_block_wrap__center { width: 100%; text-align: center;}
+	.darkgrey_block_wrap__left, .darkgrey_block_wrap__center { margin-bottom: 15px;}
+
+	.main_brands { text-align: center; display: block;}
+	.main_brands_item { width: 32%; display: inline-block; margin-bottom: 20px; vertical-align: top;}
+
 	
+	
+	.last_news .news_item { width: 50%;}
+	.last_news .news_item:nth-child(n+3) { display: none;}
 	
 }
 

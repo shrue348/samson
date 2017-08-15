@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Самсон</title>
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet"> 
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/baguetteBox.css">
+	<link rel="stylesheet" href="css/selectbox.css">
 
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="js/selectbox.min.js"></script>
 	<script src="js/ready.js"></script>
 	
 
@@ -24,19 +29,33 @@
 		<div class="header_top">
 			<div class="wrapper">
 				<div class="mobile_menu">
-					<a href="javascript:;"><i class="icon-menu"></i></a>
+					<a href="javascript:;" class="mobile_menu_toggle nowrap">Меню <i class="icon-menu"></i></a>
+
+					<div class="mobile_menu_wrap">
+						<ul class="mobile_menu__list">
+							<li class="mobile_menu__item"><a href="about.html" class="mobile_menu__link">О компании</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Клуб покупателей</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Грильмания</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Где купить</a></li>
+							<li class="mobile_menu__item"><a href="news.html" class="mobile_menu__link">Новости</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link mobile_menu__link-action">Акции</a></li>
+							<li class="mobile_menu__item"><a href="vacancy.html" class="mobile_menu__link">Карьера и вакансии</a></li>
+							<li class="mobile_menu__item"><a href="contacts.html" class="mobile_menu__link">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="overlay"></div>
 				</div>
 				
 
 				<nav class="main_menu">
 					<ul class="main_menu__list">
-						<li class="main_menu__item"><a href="" class="main_menu__link">О компании</a></li>
+						<li class="main_menu__item"><a href="about.html" class="main_menu__link">О компании</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link">Клуб покупателей</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link">Грильмания</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link">Где купить</a></li>
 						<li class="main_menu__item"><a href="news.html" class="main_menu__link">Новости</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link main_menu__link-action">Акции</a></li>
-						<li class="main_menu__item"><a href="" class="main_menu__link">Карьера и вакансии</a></li>
+						<li class="main_menu__item"><a href="vacancy.html" class="main_menu__link">Карьера и вакансии</a></li>
 						<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
 					</ul>
 				</nav>
@@ -46,16 +65,19 @@
 		<div class="header_bottom">
 			<div class="wrapper">
 				<div class="header_bottom_wrap">
-					<div class="header_soc">
-						<a href="" class="header_soc__link header_soc__link-vk"><i class="icon-vkontakte"></i></a>
-						<a href="" class="header_soc__link header_soc__link-fb"><i class="icon-facebook"></i></a>
-						<a href="" class="header_soc__link header_soc__link-instagram"><i class="icon-instagram"></i></a>
-						<a href="" class="header_soc__link header_soc__link-youtube"><i class="icon-youtube"></i></a>
-					</div>
+					<div class="header_bottom_wrap__left">
+						<div class="header_soc">
+							<a href="" class="header_soc__link header_soc__link-vk"><i class="icon-vkontakte"></i></a>
+							<a href="" class="header_soc__link header_soc__link-fb"><i class="icon-facebook"></i></a>
+							<a href="" class="header_soc__link header_soc__link-instagram"><i class="icon-instagram"></i></a>
+							<a href="" class="header_soc__link header_soc__link-youtube"><i class="icon-youtube"></i></a>
+						</div>
 
-					<div class="header_subscribe">
-						<a href="" class="header_subscribe__link"><i class="icon-pencil"></i> Подписаться на новости</a>
+						<div class="header_subscribe">
+							<a href="" class="header_subscribe__link"><i class="icon-pencil"></i> Подписаться на новости</a>
+						</div>
 					</div>
+						
 
 					<div class="header_logo">
 						<a class="header_logo__link" href="/">
@@ -63,12 +85,16 @@
 						</a>
 					</div>
 
-					<div class="header_mail">
-						<a href="mailto:info@freshfood.ru" class="header_mail__link"><i class="icon-pencil"></i> info@freshfood.ru</a>
+					<div class="header_bottom_wrap__right">
+						<div class="header_mail">
+							<a href="mailto:info@freshfood.ru" class="header_mail__link"><i class="icon-pencil"></i> info@freshfood.ru</a>
+						</div>
+						<div class="header_phone">
+							<a href="tel:+78123333369" class="header_phone__link"><i class="icon-pencil"></i> +7 (812) <span>333-33-69</span></a>
+						</div>
 					</div>
-					<div class="header_phone">
-						<a href="tel:+78123333369" class="header_phone__link"><i class="icon-pencil"></i> +7 (812) <span>333-33-69</span></a>
-					</div>
+
+						
 				</div>
 			</div>
 		</div>
@@ -90,6 +116,106 @@
 
 <div class="wrapper">
 	<h1>Контакты</h1>
+
+	<div class="contacts row">
+		<div class="col-6">
+			<div class="contacts_desc txt">
+				<p>Сео текст – это оптимизированная статья, которая пишется под определенные поисковые запросы. В ней равномерно распределены слова (ключевые запросы), по которым она сможет занять верхнее место в поисковой выдаче.Ваша задача, как сео-копирайтера, вписать ключи так, чтобы они были равномерно распределены по статье, подходили по смыслу  и при этом выглядели естественно Сео текст – это </p>
+			</div>
+			<div class="contacts_grey clear">
+				<div class="col-6">
+					<a href="tel:+78123333369" class="contacts_phone__link"><i class="icon-pencil"></i> +7 (812) <span>333-33-69</span></a>
+				</div>
+				<div class="col-6">
+					<a href="tel:+78126760855" class="contacts_fax__link"><i class="icon-pencil"></i> +7 (812) <span>676-08-55</span></a> (факс)
+				</div>
+				<div class="col-6">
+					<a href="mailto:info@freshfood.ru" class="contacts_email__link"><i class="icon-pencil"></i> info@freshfood.ru</a>
+				</div>
+				<div class="col-6">
+					<div class="contacts_soc">
+						<a href="" class="contacts_soc__link contacts_soc__link-vk"><i class="icon-vkontakte"></i></a>
+						<a href="" class="contacts_soc__link contacts_soc__link-fb"><i class="icon-facebook"></i></a>
+						<a href="" class="contacts_soc__link contacts_soc__link-instagram"><i class="icon-instagram"></i></a>
+						<a href="" class="contacts_soc__link contacts_soc__link-youtube"><i class="icon-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="contacts_form form">
+				<form action="">
+					<div class="contacts_form__title">Остались вопросы?</div>
+					<div class="contacts_form__label">Напишите нам, и мы ответим на них</div>
+
+					<div class="row">
+						<div class="col-6">
+							<div class="contacts_form_block contacts_form_block-select">
+								<label for="contacts_form_select" class="contacts_form_block__label">Вопрос</label>
+								<select name="contacts_form_select">
+									<option value="1">1</option>
+									<option value="2">21</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="contacts_form_block">
+								<label for="contacts_form_email" class="contacts_form_block__label">E-mail</label>
+								<input name="contacts_form_email" type="email" placeholder="Введите e-mail">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="contacts_form_block">
+								<label for="contacts_form_textarea" class="contacts_form_block__label">Вопрос</label>
+								<textarea name="contacts_form_textarea" cols="30" rows="2" placeholder="Напишите свой вопрос"></textarea>
+							</div>
+						</div>
+						<div class="col-7">
+							
+						</div>
+						<div class="col-5">
+				
+							<label class="contacts_form_agreement">
+								<input type="checkbox">
+								<span>Я соглашаюсь на обработку <br><a href="">персональных данных</a></span>
+							</label>
+			
+							<button class="btn btngreen">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="contacts_map">
+				<div class="contacts_map_desc">
+					<div class="contacts_map_desc__item">
+						<div class="h4">Центральный офис:</div>
+						Санкт-Петербург, Лиговский пр., д. 153, литер А, ТРК "Лиговъ"
+					</div>
+					<div class="contacts_map_desc__item">
+						<div class="h4">Офис в г. Москва:</div>
+						129090 Москва, ул. Каланчевская, д. 16, БЦ Каланчевская Плаза
+					</div>
+					<div class="contacts_map_desc__item">
+						<div class="h4">Склад:</div>
+						193079, Санкт-Петербург, Октябрьская наб., д. 104 / 46
+					</div>
+					<div class="contacts_map_desc__item">
+						<div class="h4">Производственный комплекс:</div>
+						188640, Ленинградская область, г. Всеволожск, Всеволожский пр., д. 116, лит. А1
+					</div>
+						
+				</div>
+				<div class="contacts_map_map" id="contacts_map">
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -101,7 +227,7 @@
 				<div class="footer_block col-3">
 					<div class="footer_block__title">О компании</div>
 					<ul class="footer_menu">
-						<li class="footer_menu__item"><a href="" class="footer_menu__link">История компании</a></li>
+						<li class="footer_menu__item"><a href="about.html" class="footer_menu__link">История компании</a></li>
 						<li class="footer_menu__item"><a href="" class="footer_menu__link">Миссия</a></li>
 						<li class="footer_menu__item"><a href="brands.html" class="footer_menu__link">Бренды</a></li>
 					</ul>
@@ -140,7 +266,7 @@
 					<p>Установите бесплатное приложение</p>
 
 					<a href="" class="footer_app_link"><img src="img/appstore.png" alt=""></a>
-					<a href="" class="footer_app_link"><img src="img/googleplay.png" alt=""></a>
+					<a href="" class="footer_app_link mgr0"><img src="img/googleplay.png" alt=""></a>
 				</div>
 			</div>
 		</div>

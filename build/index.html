@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Самсон</title>
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet"> 
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" href="css/iconic.css">
 	<link rel="stylesheet" href="css/baguetteBox.css">
+	<link rel="stylesheet" href="css/selectbox.css">
 
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="js/selectbox.min.js"></script>
 	<script src="js/ready.js"></script>
 	
 
@@ -24,19 +29,33 @@
 		<div class="header_top">
 			<div class="wrapper">
 				<div class="mobile_menu">
-					<a href="javascript:;"><i class="icon-menu"></i></a>
+					<a href="javascript:;" class="mobile_menu_toggle nowrap">Меню <i class="icon-menu"></i></a>
+
+					<div class="mobile_menu_wrap">
+						<ul class="mobile_menu__list">
+							<li class="mobile_menu__item"><a href="about.html" class="mobile_menu__link">О компании</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Клуб покупателей</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Грильмания</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link">Где купить</a></li>
+							<li class="mobile_menu__item"><a href="news.html" class="mobile_menu__link">Новости</a></li>
+							<li class="mobile_menu__item"><a href="" class="mobile_menu__link mobile_menu__link-action">Акции</a></li>
+							<li class="mobile_menu__item"><a href="vacancy.html" class="mobile_menu__link">Карьера и вакансии</a></li>
+							<li class="mobile_menu__item"><a href="contacts.html" class="mobile_menu__link">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="overlay"></div>
 				</div>
 				
 
 				<nav class="main_menu">
 					<ul class="main_menu__list">
-						<li class="main_menu__item"><a href="" class="main_menu__link">О компании</a></li>
+						<li class="main_menu__item"><a href="about.html" class="main_menu__link">О компании</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link">Клуб покупателей</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link">Грильмания</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link">Где купить</a></li>
 						<li class="main_menu__item"><a href="news.html" class="main_menu__link">Новости</a></li>
 						<li class="main_menu__item"><a href="" class="main_menu__link main_menu__link-action">Акции</a></li>
-						<li class="main_menu__item"><a href="" class="main_menu__link">Карьера и вакансии</a></li>
+						<li class="main_menu__item"><a href="vacancy.html" class="main_menu__link">Карьера и вакансии</a></li>
 						<li class="main_menu__item"><a href="contacts.html" class="main_menu__link">Контакты</a></li>
 					</ul>
 				</nav>
@@ -46,16 +65,19 @@
 		<div class="header_bottom">
 			<div class="wrapper">
 				<div class="header_bottom_wrap">
-					<div class="header_soc">
-						<a href="" class="header_soc__link header_soc__link-vk"><i class="icon-vkontakte"></i></a>
-						<a href="" class="header_soc__link header_soc__link-fb"><i class="icon-facebook"></i></a>
-						<a href="" class="header_soc__link header_soc__link-instagram"><i class="icon-instagram"></i></a>
-						<a href="" class="header_soc__link header_soc__link-youtube"><i class="icon-youtube"></i></a>
-					</div>
+					<div class="header_bottom_wrap__left">
+						<div class="header_soc">
+							<a href="" class="header_soc__link header_soc__link-vk"><i class="icon-vkontakte"></i></a>
+							<a href="" class="header_soc__link header_soc__link-fb"><i class="icon-facebook"></i></a>
+							<a href="" class="header_soc__link header_soc__link-instagram"><i class="icon-instagram"></i></a>
+							<a href="" class="header_soc__link header_soc__link-youtube"><i class="icon-youtube"></i></a>
+						</div>
 
-					<div class="header_subscribe">
-						<a href="" class="header_subscribe__link"><i class="icon-pencil"></i> Подписаться на новости</a>
+						<div class="header_subscribe">
+							<a href="" class="header_subscribe__link"><i class="icon-pencil"></i> Подписаться на новости</a>
+						</div>
 					</div>
+						
 
 					<div class="header_logo">
 						<a class="header_logo__link" href="/">
@@ -63,12 +85,16 @@
 						</a>
 					</div>
 
-					<div class="header_mail">
-						<a href="mailto:info@freshfood.ru" class="header_mail__link"><i class="icon-pencil"></i> info@freshfood.ru</a>
+					<div class="header_bottom_wrap__right">
+						<div class="header_mail">
+							<a href="mailto:info@freshfood.ru" class="header_mail__link"><i class="icon-pencil"></i> info@freshfood.ru</a>
+						</div>
+						<div class="header_phone">
+							<a href="tel:+78123333369" class="header_phone__link"><i class="icon-pencil"></i> +7 (812) <span>333-33-69</span></a>
+						</div>
 					</div>
-					<div class="header_phone">
-						<a href="tel:+78123333369" class="header_phone__link"><i class="icon-pencil"></i> +7 (812) <span>333-33-69</span></a>
-					</div>
+
+						
 				</div>
 			</div>
 		</div>
@@ -190,31 +216,31 @@
 	<div class="wrapper">
 		<div class="h2">Мясокомбинат Всеволожский производит продукцию под следующими торговыми марками:</div>
 
-		<div class="preims row">
-			<div class="preims_item">
-				<img src="img/preim_1.png" alt="Самсон" class="preims_item__img">
-				<div class="preims_item__title">«Самсон»<sup>тм</sup></div>
-				<div class="preims_item__desc">Полуфабрикаты <br>из красного мяса</div>
+		<div class="main_brands row">
+			<div class="main_brands_item">
+				<img src="img/preim_1.png" alt="Самсон" class="main_brands_item__img">
+				<div class="main_brands_item__title">«Самсон»<sup>тм</sup></div>
+				<div class="main_brands_item__desc">Полуфабрикаты <br>из красного мяса</div>
 			</div>
-			<div class="preims_item">
-				<img src="img/preim_2.png" alt="" class="preims_item__img">
-				<div class="preims_item__title">«Филея»</div>
-				<div class="preims_item__desc">Полуфабрикаты <br>из мяса птицы и кролика</div>
+			<div class="main_brands_item">
+				<img src="img/preim_2.png" alt="" class="main_brands_item__img">
+				<div class="main_brands_item__title">«Филея»</div>
+				<div class="main_brands_item__desc">Полуфабрикаты <br>из мяса птицы и кролика</div>
 			</div>
-			<div class="preims_item">
-				<img src="img/preim_3.png" alt="" class="preims_item__img">
-				<div class="preims_item__title">«ВремяЕсть»</div>
-				<div class="preims_item__desc">Готовые сэндвичи</div>
+			<div class="main_brands_item">
+				<img src="img/preim_3.png" alt="" class="main_brands_item__img">
+				<div class="main_brands_item__title">«ВремяЕсть»</div>
+				<div class="main_brands_item__desc">Готовые сэндвичи</div>
 			</div>
-			<div class="preims_item">
-				<img src="img/preim_4.png" alt="" class="preims_item__img">
-				<div class="preims_item__title">«ОК24»</div>
-				<div class="preims_item__desc">Готовые сэндвичи</div>
+			<div class="main_brands_item">
+				<img src="img/preim_4.png" alt="" class="main_brands_item__img">
+				<div class="main_brands_item__title">«ОК24»</div>
+				<div class="main_brands_item__desc">Готовые сэндвичи</div>
 			</div>
-			<div class="preims_item">
-				<img src="img/preim_5.png" alt="" class="preims_item__img">
-				<div class="preims_item__title">«Грильмания»</div>
-				<div class="preims_item__desc">Продукты <br>для гриля и барбекю</div>
+			<div class="main_brands_item">
+				<img src="img/preim_5.png" alt="" class="main_brands_item__img">
+				<div class="main_brands_item__title">«Грильмания»</div>
+				<div class="main_brands_item__desc">Продукты <br>для гриля и барбекю</div>
 			</div>
 		</div>
 	</div>
@@ -314,7 +340,7 @@
 				<div class="footer_block col-3">
 					<div class="footer_block__title">О компании</div>
 					<ul class="footer_menu">
-						<li class="footer_menu__item"><a href="" class="footer_menu__link">История компании</a></li>
+						<li class="footer_menu__item"><a href="about.html" class="footer_menu__link">История компании</a></li>
 						<li class="footer_menu__item"><a href="" class="footer_menu__link">Миссия</a></li>
 						<li class="footer_menu__item"><a href="brands.html" class="footer_menu__link">Бренды</a></li>
 					</ul>
@@ -353,7 +379,7 @@
 					<p>Установите бесплатное приложение</p>
 
 					<a href="" class="footer_app_link"><img src="img/appstore.png" alt=""></a>
-					<a href="" class="footer_app_link"><img src="img/googleplay.png" alt=""></a>
+					<a href="" class="footer_app_link mgr0"><img src="img/googleplay.png" alt=""></a>
 				</div>
 			</div>
 		</div>

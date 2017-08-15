@@ -16,7 +16,7 @@ $(function(){
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 768,
 				settings: {
 				    slidesToShow: 3
 				}
@@ -43,7 +43,7 @@ $(function(){
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 768,
 				settings: {
 				    slidesToShow: 2
 				}
@@ -57,6 +57,26 @@ $(function(){
 		]
 	})
 });
+
+$(function(){
+	$('select').selectbox();
+})
+
+
+$(function(){
+	$('.mobile_menu_toggle').on('click', function(){
+		$('.mobile_menu').toggleClass('active');
+	});
+
+	$('.mobile_menu_wrap + .overlay').on('click', function(){
+		$('.mobile_menu').removeClass('active');
+	})
+
+	window.onscroll = function(){
+		$('.mobile_menu').removeClass('active')
+	};
+})
+
 
 // $(function(){
 // 	var obj = $('.apartaments_back'),
