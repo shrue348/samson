@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" width="device-width">
 	<title>Самсон</title>
 
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet"> 
 
 	<link rel="stylesheet" href="css/reset.css">
@@ -29,7 +30,10 @@
 		<div class="header_top">
 			<div class="wrapper">
 				<div class="mobile_menu">
-					<a href="javascript:;" class="mobile_menu_toggle nowrap">Меню <i class="icon-menu"></i></a>
+					<div class="mobile_menu__top">
+						<a href="javascript:;" class="mobile_menu_toggle nowrap">Меню <i class="icon-menu"></i></a>
+					</div>
+					
 
 					<div class="mobile_menu_wrap">
 						<ul class="mobile_menu__list">
@@ -281,6 +285,20 @@
 				<a href="news_page.html" class="news_item__link">Подробнее</a>
 			</div>
 		</div>
+	</div>
+
+	<div class="pagi">
+		<a class="pagi_prev" href=""><i class="icon- mgr5">←</i> Назад</a>
+
+		<a class="pagi_num" href="">1</a>
+		<a class="pagi_num" href="">2</a>
+		<span class="pagi_num">3</span>
+		<a class="pagi_num" href="">4</a>
+		<a class="pagi_num" href="">5</a>
+		<span class="pagi_num">...</span>
+		<a class="pagi_num" href="">10</a>
+
+		<a class="pagi_next" href="">Вперед <i class="icon- mgl5">→</i></a>
 	</div>
 </div>
 
