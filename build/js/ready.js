@@ -62,6 +62,12 @@ $(function(){
 			}
 		]
 	})
+
+	$('.main_slider').slick({
+		prevArrow: '<button type="button" class="main_slider__prev"><i class="icon-angle-left"></i></button>',
+		nextArrow: '<button type="button" class="main_slider__next"><i class="icon-angle-right"></i></button>',
+		draggable: true
+	});
 });
 
 $(function(){
