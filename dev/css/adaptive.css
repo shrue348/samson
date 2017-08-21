@@ -61,6 +61,10 @@
 	    z-index: 2;
 	}
 	.news_item { width: 33.333%; }
+	.header_soc__link { margin-right: 0; margin-left: 4px; }
+
+	.main_slider__prev, .main_slider__next { width: 220px; padding: 10px; }
+	.main_slider__prev > i:before, .main_slider__next > i:before { font-size: 18px; width: 30px; height: 30px; line-height: 25px;}
 
 }
 
@@ -72,6 +76,8 @@
 
 			 
 @media (max-width: 767px) {
+	.breadcrumbs { height: 20px; }
+	.breadcrumbs_item { display: none; }
 	.mobile_menu { float: none; display: inline-block;}
 	.main_menu { display: none;}
 
@@ -90,6 +96,7 @@
 	.header_bottom_wrap__left { justify-content: end;}
 	.header_bottom_wrap__right { justify-content: start;}
 	.header_logo { flex: 0 0 240px;}
+	.header_soc__link { margin-right: 0; margin-left: 4px; }
 
 	.main_icons_item { width: 50%;}
 
@@ -105,14 +112,12 @@
 	.last_news .news_item { width: 50%; max-width: 300px}
 	.last_news .news_item:nth-child(n+3) { display: none;}
 
-	.main_slider__prev, .main_slider__next { font-size: 16px; width: 30px; height: 30px; bottom: 10px; }
-	.main_slider__prev { left: 80px; }
-	.main_slider__next { right: 80px; }
-	.main_slider__prev:before { top: -10px; right: -10px; bottom: -12px;}
-	.main_slider__next:before { top: -10px; left: -10px; bottom: -12px;}
-
 	.news_item { width: 50%; }
+
+	.main_slider__prev, .main_slider__next { width: 150px; padding: 10px; }
+	.main_slider__prev > i:before, .main_slider__next > i:before { font-size: 18px; width: 26px; height: 26px; line-height: 22px;}
 	
+
 }
 
 @media (max-width: 680px) {
@@ -136,10 +141,13 @@
 	h2, .h2 { font-size: 24px; }
 
 	
+	
 }
 
  
 @media (max-width: 480px) {
+	
+
 	.main_icons_item { width: 100%; }
 	.main_brands_item { width: 49%; }
 
@@ -155,11 +163,8 @@
 	    transform: translateX(-31%);
 	}
 
-	.main_slider__prev, .main_slider__next { font-size: 16px; width: 20px; height: 20px; bottom: 5px; line-height: 15px;}
-	.main_slider__prev { left: 35px; }
-	.main_slider__next { right: 35px; }
-	.main_slider__prev:before { top: -7px; right: -7px; bottom: -7px;}
-	.main_slider__next:before { top: -7px; left: -7px; bottom: -7px;}
+	.main_slider__prev, .main_slider__next { width: 90px; padding: 7px; }
+
 
 }
 
