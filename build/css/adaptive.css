@@ -7,7 +7,7 @@
 
 	.main_slider { max-width: 100%; }
 	.main_slider__prev, .main_slider__next { width: 90px; }
-	.main_slider img { position: relative; right: -22px; }
+	.main_slider img { position: relative; }
 }
 
 
@@ -67,7 +67,8 @@
 	.header_soc__link { margin-right: 0; margin-left: 4px; }
 
 	.main_slider { height: 230px; }
-	.main_slider img {  -webkit-transform: translateX(26%) scale(0.66);  transform: translateX(26%) scale(0.66); margin-top: 55px;}
+	.main_slider__item { text-align: right; }
+	.main_slider img {  -webkit-transform: translateX(30px) scale(0.66);  transform: translateX(30px) scale(0.66); margin-top: 55px; -webkit-transform-origin: 100% 50% 0; transform-origin: 100% 50% 0;}
 	.main_slider__prev, .main_slider__next { width: 90px; padding: 10px; }
 	.main_slider__prev > i:before, .main_slider__next > i:before { font-size: 18px; width: 30px; height: 30px; line-height: 25px;}
 
@@ -114,15 +115,23 @@
 
 	
 	.last_news { -ms-flex-pack: distribute; justify-content: space-around; }
-	.last_news .news_item { width: 50%; max-width: 300px}
+	.last_news .news_item { width: 50%; max-width: 300px;}
 	.last_news .news_item:nth-child(n+3) { display: none;}
 
-	.news_item { width: 50%; }
+	.news { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+	.news .news_item { width: 50%; max-width: 300px }
 
 	.main_slider { height: 230px; }
-	.main_slider img {  -webkit-transform: translateX(26%) scale(0.66);  transform: translateX(26%) scale(0.66); margin-top: 55px;}
+	.main_slider__item { text-align: right; }
+	.main_slider img {  -webkit-transform: translateX(30px) scale(0.66);  transform: translateX(30px) scale(0.66); margin-top: 55px; -webkit-transform-origin: 100% 50% 0; transform-origin: 100% 50% 0;}
+
+
 	.main_slider__prev, .main_slider__next { width: 90px; padding: 10px; }
 	.main_slider__prev > i:before, .main_slider__next > i:before { font-size: 18px; width: 26px; height: 26px; line-height: 22px;}
+
+	.pagi .pagi_num { display: none; }
+	span.pagi_prev, a.pagi_prev { margin-right: 30px;}
+	span.pagi_next, a.pagi_next { margin-left: 30px;}
 	
 
 }
@@ -147,7 +156,7 @@
 	h1, .h1 { font-size: 28px; }
 	h2, .h2 { font-size: 24px; }
 
-	
+
 	
 }
 
@@ -172,6 +181,7 @@
 	}
 
 	.main_slider__prev, .main_slider__next { width: 90px; padding: 7px; }
+	.news .news_item { width: 100%; max-width: 300px }
 
 
 }
@@ -183,6 +193,7 @@
 	    -webkit-transform: scale(1.05);
 	            transform: scale(1.05);
 	}
+	
 
 }
 

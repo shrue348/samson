@@ -356,7 +356,7 @@ select {
 /*.header_phone__link:hover { color: #9abb3b; }*/
 
 
-.header_subscribe__link { position: relative; padding-left:24px; }
+.header_subscribe__link { position: relative; padding-left: 24px; }
 .header_subscribe__link:before { position: absolute; left: -2px; top: 6px; content: url(../img/subscribe_icon.png); }
 .header_mail__link { position: relative; padding-left: 30px; }
 .header_mail__link:before { position: absolute; left: -1px; top: 6px; content: url(../img/email_icon.png); }
@@ -392,11 +392,11 @@ select {
 
 .main_slider__wrapper { position: relative; background: url(../img/main_slider_back.jpg) no-repeat scroll center / cover transparent; } 
 
-.main_slider { max-width: 1920px; margin: auto; height: 350px; overflow: hidden; }
+.main_slider { max-width: 100%; margin: auto; height: 350px; overflow: hidden; }
 .main_slider__item { float: left; text-align: center; overflow: hidden;}
 
 .main_slider > .main_slider__item:not(:last-child) { display: none; }
-.main_slider img { position: relative; margin-top: 124px; -webkit-transform: translateX(24%); transform: translateX(24%); max-width: auto;}
+.main_slider img { position: relative; margin-top: 124px; -webkit-transform: translateX(200px); transform: translateX(200px); max-width: 2200px;}
 .main_slider__prev, .main_slider__next {
     position: absolute;
     z-index: 3;
