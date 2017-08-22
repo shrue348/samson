@@ -327,7 +327,7 @@ select {
 /*-----------------*/
 /*-----------------*/
 
-.header { position: relative; z-index: 2;}
+.header { position: relative; z-index: 3;}
 .header_top { color: #fff; background-color: #343a3e; position: relative; z-index: 10; height: 52px;}
 .header_top .wrapper { position: relative; }
 .header_top .wrapper:after { position: absolute; content: url(../img/header_after.png); top: 0; right: 0; z-index: 2; }

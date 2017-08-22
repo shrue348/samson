@@ -132,6 +132,8 @@
 	.pagi .pagi_num { display: none; }
 	span.pagi_prev, a.pagi_prev { margin-right: 30px;}
 	span.pagi_next, a.pagi_next { margin-left: 30px;}
+
+	.news_page__img_wrap { float: none; margin-right: 0; }
 	
 
 }
