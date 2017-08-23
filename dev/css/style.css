@@ -251,6 +251,7 @@ select {
     -webkit-appearance: menulist;
 }
 
+
 .form_wrap { border: 1px solid #d7d7d7; background-color: #faf9f9; padding: 17px; box-sizing: border-box; border-radius: 8px; padding: 25px 40px;}
 .form input[type="text"], .form input[type="password"], .form input[type="email"], .form input[type="number"], .form input[type="tel"], .form input[type="url"], .form textarea {
     border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
@@ -519,11 +520,14 @@ select {
 .contacts_form__title { font-size: 28px; text-align: center; margin-bottom: 5px;}
 .contacts_form__label { font-size: 20px; text-align: center; margin-bottom: 25px;}
 .contacts_form_block { margin-bottom: 25px; display: block; }
-.contacts_form_block__label { display: inline-block; position: relative; background-color: #fff; padding: 0 5px; margin-left: 24px; font-size: 14px; color: #acacac; font-family: 'Open Sans', sans-serif; z-index: 3;}
-.contacts_form_block-select { z-index: 10; position: relative;}
+.contacts_form_block__label { display: inline-block; position: relative; background-color: #fff; padding: 0 5px; margin-left: 24px; font-size: 14px; color: #acacac; font-family: 'Open Sans', sans-serif; z-index: 102;}
+.contacts_form_block-select { z-index: 103; position: relative;}
 .contacts_form_block__label + .selectbox,
 .contacts_form_block__label + input,
-.contacts_form_block__label + textarea { margin-top: -10px; position: relative; z-index: 1;}
+.contacts_form_block__label + textarea, 
+.contacts_form_block__label + .customSelect { margin-top: -10px; position: relative; z-index: 1;}
+
+
 .contacts_form_agreement { display: flex; font-size: 12px; line-height: 1.2; font-style: italic; margin-bottom: 7px;}
 .contacts_form_agreement a { color: #8db322;}
 .contacts_form_agreement input[type=checkbox] { display: none;}

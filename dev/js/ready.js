@@ -3,7 +3,7 @@
 $(function(){
 	baguetteBox.run('.baguetteBox');
 
-	$('.slick_where').slick({
+	$('.slick_where').slick({ // слайдер где купить
 		slidesToShow: 6,
 		prevArrow: '<button type="button" class="slick_where__prev"><i class="icon-angle-left"></i></button>',
 		nextArrow: '<button type="button" class="slick_where__next"><i class="icon-angle-right"></i></button>',
@@ -36,7 +36,7 @@ $(function(){
 		]
 	})
 
-	$('.slick_main_catitems').slick({
+	$('.slick_main_catitems').slick({ // товары на главной
 		slidesToShow: 3,
 		prevArrow: '<button type="button" class="slick_where__prev"><i class="icon-angle-left"></i></button>',
 		nextArrow: '<button type="button" class="slick_where__next"><i class="icon-angle-right"></i></button>',
@@ -63,19 +63,16 @@ $(function(){
 		]
 	})
 
-	$('.main_slider').slick({
+	$('.main_slider').slick({  // главный слайдер
 		prevArrow: '<button type="button" class="main_slider__prev"><i class="icon-angle-left"></i></button>',
 		nextArrow: '<button type="button" class="main_slider__next"><i class="icon-angle-right"></i></button>',
 		draggable: true
 	});
 });
 
-$(function(){
-	$('select').selectbox();
-})
 
 
-$(function(){
+$(function(){ // toggle mobile_menu
 	$('.mobile_menu_toggle').on('click', function(){
 		$('.mobile_menu').toggleClass('active');
 	});
@@ -89,21 +86,15 @@ $(function(){
 	};
 })
 
+$(function(){
+	var select = new SelectBox({
+		selectbox: $("select"),
+		height: 150,
+		width: "100%",
+		changeCallback: function(val) {}
+	});
+})
+	
+			
 
-// $(function(){
-// 	var obj = $('.apartaments_back'),
-// 		img1_offset = obj.offset().top,
-// 		scrolltop;
-
-// 	$(window).scroll(function(e){
-// 		scrolltop = $(window).scrollTop();
-// 		obj.css({'transform': 'translate3d(0, '+(-img1_offset + scrolltop)/6.5+'px, 0)'});
-// 	});
-// });
-
-
-
-
-
-
-
+			
