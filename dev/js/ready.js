@@ -107,6 +107,43 @@ $(function(){ // стилизованные селекты
 $(function(){
 	$('.where_map_find_list').jScrollPane();
 });
-			
+
+$(function(){
+	$('[name=contacts_form_phone]').mask("+7(999) 999 99 99");
+})
+
+
+$(function() { // стилизованные инпут-файл
+	$('input[type=file]').each(function() {
+		var $input = $(this),
+			$label = $input.next('.js-labelFile'),
+			labelVal = $label.html();
+
+		$input.hide();
+		$input.on('change', function(element) {
+			var fileName = '';
+			if (element.target.value) fileName = element.target.value.split('\\').pop();
+			fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+		});
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			

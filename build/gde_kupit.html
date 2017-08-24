@@ -19,10 +19,12 @@
 
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/baguetteBox.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/customSelectBox.js"></script>
 	<script src="js/jScrollPane.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/ready.js"></script>
 	
 
@@ -269,6 +271,133 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="modal fade" id="modal_vacancy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close"></a>
+
+				<div class="modal_top">
+					<div class="modal_title">Фасовщик</div>
+				</div>
+				
+				<div class="modal_bottom">
+					<div class="modal_grey_block">
+						<div class="vacancy_item__desc">
+							<span class="vacancy_item__location">Санкт-Петербург</span>
+							<span class="vacancy_item__price">от <span>100 000</span> руб.</span>
+							<span class="vacancy_item__сal">Опыт работы <strong>не требуется</strong></span>
+							
+						</div>
+					</div>
+
+					<div class="txt mgb20">
+						<p>Крупная производственная компания ПРИГЛАШАЕТ НА РАБОТУ!</p>
+						<h4>Обязанности:</h4>
+						<ul>
+							<li>Осуществление фасовки/упаковки или укладки товара;</li>
+							<li>Работа на электронных весах;</li>
+							<li>Заготовка этикеток;</li>
+						</ul>
+
+						<h4>Требования:</h4>
+						<ul>
+							<li>Опыт работы на электронных весах желателен</li>
+							<li>Опыт работы на предприятиях пищевой промышленности желателен</li>
+							<li>Аккуратность</li>
+							<li>Ответственность</li>
+						</ul>
+
+						<h4>Условия:</h4>
+						<ul>
+							<li>Оформление согласно ТК РФ, полный соц. пакет</li>
+							<li>График работы 2/2</li>
+							<li>Спецодежда</li>
+							<li>Льготное питание</li>
+							<li>Рабочее место: завод в г.Всеволожск</li>
+							<li>Развозка от ст.м. "Ладожская"/"Ломоносовская" и от ж/д станции "Всеволожск"</li>
+							<li>Профессиональное развитие в Компании</li>
+						</ul>
+
+						<h4>Тип занятости</h4>
+						<ul>
+							<li>Полная занятость, полный день</li>
+						</ul>
+					</div>
+
+					<div class="mgb20">
+						<a href="" class="btn btngrey">Отправить резюме</a>
+					</div>
+
+					<div class="font28 b mgb20">Отправить резюме</div>
+
+					<div class="contacts_form form">
+
+						<form action="">
+							<div class="row">
+								<div class="col-6">
+									<div class="contacts_form_block clear">
+										<label class="contacts_form_block__label">Телефон <span class="colorgreen">*</span></label>
+										<input name="contacts_form_phone" type="text" placeholder="+7(___) ___ __ __">
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="contacts_form_block clear">
+										<label class="contacts_form_block__label">E-mail <span class="colorgreen">*</span></label>
+										<input name="contacts_form_email" type="email" placeholder="Введите e-mail">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="contacts_form_block clear">
+										<label  class="contacts_form_block__label">Вопрос</label>
+										<textarea name="contacts_form_textarea" cols="30" placeholder="Напишите свой вопрос"></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="contacts_form_block clear">
+										<label class="input_btn btn btn_blue"> 
+										 	<input name="" style="display: none;" type="file"> 
+										 	<span class="js-labelFile"> 
+										 		<i class="icon-plus-circled"></i> <span class="js-fileName">Прикрепить файл</span> 
+										 	</span> 
+										</label>
+									</div>
+								</div>
+								
+								<div class="col-7">
+									<div class="contacts_form_block">
+										capcha
+									</div>
+								</div>
+								<div class="col-5">
+						
+									<label class="contacts_form_agreement">
+										<input type="checkbox">
+										<span>Я соглашаюсь на обработку <br><a href="">персональных данных</a></span>
+									</label>
+					
+									<button class="btn btngreen">Отправить</button>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+					
+			</div>
+		</div>
+	</div>
+
+	<svg class="none">
+		<defs>
+			<clipPath id="clipPathSVG" clipPathUnits="objectBoundingBox">
+			  <polygon points=".5,0 .8,1 0,.4 1,.4 .2,1" />
+			</clipPath>
+		</defs>
+	</svg>
 
 </body>
 </html>
