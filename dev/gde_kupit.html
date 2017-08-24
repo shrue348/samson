@@ -1,0 +1,102 @@
+//= _header.html
+//= _breadcrumbs.html
+
+<div class="pd_block">
+	<div class="wrapper">
+		<h1>Где купить продукцию «Самсон»тм</h1>
+
+		<div class="where">
+			<div class="txt mgb55">
+				<p>Сео текст – это оптимизированная статья, которая пишется под определенные поисковые запросы. В ней равномерно распределены слова (ключевые запросы), по которым она сможет занять верхнее место в поисковой выдаче.</p>
+			</div>
+			
+			
+			<div class="where_form">
+				<form action="">
+					<div class="row">
+						<div class="col-3">
+							<div class="where_form_block clear where_form_block-select">
+								<label class="where_form_block__label">Город</label>
+								<select name="where_form_select">
+									<option value="1">Санкт-Петербург</option>
+									<option value="1">Санкт-Петербург</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="where_form_block clear where_form_block-select">
+								<label class="where_form_block__label">Район</label>
+								<select name="where_form_select">
+									<option value="1">Приморский</option>
+									<option value="1">Приморский</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="where_form_block clear where_form_block-select">
+								<label class="where_form_block__label">Метро</label>
+								<select name="where_form_select">
+									<option value="1">Пионерская</option>
+									<option value="1">Пионерская</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="where_form_block clear where_form_block-radio">
+								<label class="where_form_block__label">
+									<input type="checkbox" name="">
+									<span>Купить «Самсон»<sup class="font12">тм</sup> <span class="colorred">со скидкой</span></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="where_map">
+				<div class="where_map_map" id="where_map"></div>
+				<div class="where_map_desc">
+					<div class="where_map_desc__find">
+						Найдено объектов
+						<span class="where_map_desc__find-count">1 150</span>
+					</div>
+
+					<div class="where_map_find_list">
+						<div class="where_map_find_list__item where_map_find_list__item-green">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-green">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+						<div class="where_map_find_list__item where_map_find_list__item-red">Пятерочка <br>Канал Грибоедова набережная, д.122,</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			<script>
+				var myMap;
+
+				ymaps.ready(init);
+
+				function init () {
+				    myMap = new ymaps.Map('where_map', {
+				        center: [55.76, 37.64], 
+				        zoom: 10
+				    }, {
+				        searchControlProvider: 'yandex#search'
+				    });
+				}
+			</script>
+	
+		</div>
+	</div>
+</div>
+
+//= _footer.html

@@ -86,11 +86,24 @@ $(function(){ // toggle mobile_menu
 	};
 })
 
-$(function(){
-	var select = new SelectBox({
-		selectbox: $("select"),
-		height: 150,
-		width: "100%",
-		changeCallback: function(val) {}
-	});
+$(function(){ // стилизованные селекты
+	// var select = new SelectBox({
+	// 	selectbox: $("select"),
+	// 	height: 150,
+	// 	width: "100%",
+	// 	changeCallback: function(val) {}
+	// });
+
+	$('select').each(function(){
+		var select = new SelectBox({
+			selectbox: $(this),
+			height: 150,
+			width: "100%",
+			changeCallback: function(val) {}
+		});
+	})
 })
+	
+$(function(){
+	$('.where_map_find_list').jScrollPane();
+});
