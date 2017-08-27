@@ -897,7 +897,7 @@ a.pagi_num:hover { color: #a1c049; border-color: #a1c049; }
 .modal .vacancy_item__price,
 .modal .vacancy_item__сal { margin-bottom: 10px; }
 .modal .contacts_form { margin-bottom: 0;}
-.modal .btn { width: 100%; }
+.modal .btn { width: 100%; max-width: 280px;}
 
 
 

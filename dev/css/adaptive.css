@@ -37,7 +37,10 @@
 	    z-index: 2;
 	}
 
-	
+	.vacancy_item__location:before,
+	.vacancy_item__price:before { margin-right: 3px; }
+	.vacancy_item__btn.btn { padding: 0 10px; }
+	.vacancy_item { padding: 25px 20px 29px; }
 }
 
 
