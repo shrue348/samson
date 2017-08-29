@@ -386,10 +386,10 @@ select {
 .main_slider__wrapper { position: relative; background: url(../img/main_slider_back.jpg) no-repeat scroll center / cover transparent; } 
 
 .main_slider { max-width: 100%; margin: auto; height: 350px; overflow: hidden; }
-.main_slider__item { float: left; text-align: right; overflow: hidden;}
+.main_slider__item { float: left; text-align: center; overflow: hidden;}
 
 .main_slider > .main_slider__item:not(:last-child) { display: none; }
-.main_slider img { position: relative; margin-top: 124px;  max-width: 2200px; -webkit-transform-origin: 100% 50% 0; transform-origin: 100% 50% 0;}
+.main_slider img { position: relative; margin-top: 124px;  max-width: 2200px; -webkit-transform-origin: 100% 50% 0; transform-origin: 100% 50% 0; -webkit-transform: translateX(200px); transform: translateX(200px);}
 .main_slider__prev, .main_slider__next {
     position: absolute;
     z-index: 3;
