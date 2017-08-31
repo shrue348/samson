@@ -77,8 +77,8 @@
 	.news_item { width: 33.333%; }
 	.header_soc__link { margin-right: 0; margin-left: 4px; }
 
-	.main_slider { height: 230px; }
-	.main_slider__item { text-align: right; }
+	.main_slider { }
+	.main_slider__item { height: 230px; }
 
 	.main_slider__prev, .main_slider__next { width: 90px; padding: 10px; }
 	.main_slider__prev > i:before, .main_slider__next > i:before { font-size: 18px; width: 30px; height: 30px; line-height: 25px;}
@@ -152,8 +152,8 @@
 	.news { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 	.news .news_item { width: 50%; max-width: 300px }
 
-	.main_slider { height: 230px; }
-	.main_slider__item { text-align: right; }
+	.main_slider { }
+	.main_slider__item { height: 230px;  }
 
 	.main_slider__prev, .main_slider__next { width: 90px; padding: 10px; }
 	.main_slider__prev > i:before, .main_slider__next > i:before { font-size: 18px; width: 26px; height: 26px; line-height: 22px;}
@@ -224,6 +224,7 @@
 	.where_map { -ms-flex-wrap: wrap; flex-wrap: wrap;}
 	.where_map_desc { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; border-left: 0;}
 	.where_map_map { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; height: 250px; }
+	.main_slider__prev, .main_slider__next { padding: 5px; }
 }
  
 @media (max-width: 480px) {
@@ -241,7 +242,7 @@
 
 
 
-	.main_slider__prev, .main_slider__next { width: 90px; padding: 7px; }
+	.main_slider__prev, .main_slider__next { width: 90px; padding: 2px; }
 	.news .news_item { width: 100%; max-width: 300px }
 
 	.contacts_grey { padding: 35px 15px 28px;}
@@ -258,6 +259,8 @@
 	.vacancy_item__price { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; margin-bottom: 20px;}
 
 	.main_slider img {  -webkit-transform: scale(0.5) translateX(190px);  transform: scale(0.5) translateX(190px);}
+
+	.main_slider__item { height: 190px;  }
 }
 
 @media (max-width: 340px) {
@@ -269,6 +272,8 @@
 	}
 	
 	.main_slider img {  -webkit-transform: scale(0.5) translateX(230px);  transform: scale(0.5) translateX(230px);}
+
+	.main_slider__item { height: 150px;  }
 }
 
 
